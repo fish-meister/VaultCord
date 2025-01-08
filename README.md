@@ -15,5 +15,6 @@ VaultCord has been programmed with various features to help protect your Server.
 | modlogs | Lets you set a ModLog Channel | `manage_guild` |
 | moderate | Opens the User Moderation Panel | `moderate_members` |
 | statistics | Lists Statistical Information about VaultCord | `None` |
+| usercheck | Lists Information about a User or yourself | `None` |
 | help | Shows the overall Help Message | `None` |
 | commands | Shows the List of Command's | `None` |

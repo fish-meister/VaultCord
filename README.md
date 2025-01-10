@@ -1,4 +1,4 @@
-# [AUTHORA](https://discord.com/oauth2/authorize?client_id=1326296257035112548) SECURITY 🔒
+# [VAULTCORD](https://discord.com/oauth2/authorize?client_id=1326296257035112548) SECURITY 🔒
 VaultCord is dedicated to providing extra security to Discord Server's of all kinds.<br />
 Protect your Server with User Verification and more!
 ## FEATURES

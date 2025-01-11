@@ -44,3 +44,4 @@ Below is a list of Function's and their necessary User & Bot Permission's.
 | authentication | The Authentication functionality | `-` | `connections` `manage_roles` `send_messages` `read_message_history` |
 | customisation | The Customisation functionality | `manage_guild` | `-` |
 | moderation | The Authentication functionality | `moderate_members` | `kick_members` `ban_members` |
+

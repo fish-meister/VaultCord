@@ -2,37 +2,45 @@
 VaultCord is dedicated to providing extra security to Discord Server's of all kinds.<br />
 Protect your Server with User Verification and more!
 ## FEATURES
-### Automatic User Verification
-- **Randomized Code & Word Generation**
-  - Ensures each user receives a unique, unpredictable verification challenge to prevent bots from bypassing the system.
-  - Combines alphanumeric codes and randomized phrases for enhanced security.
-### Dynamic Customization
-- **Verification Method Customization**
-  - Choose from multiple verification methods, such as code-based challenges, captcha systems, or unique word prompts, to suit your server's security needs.
-  - Easily adjust settings for user-specific or role-based verification flows.
-- **Staff Role & Permissions Management**
-  - Define roles with granular permission settings, allowing staff members to manage verification processes without compromising server security.
-  - Enable or restrict features based on role hierarchy to maintain control over sensitive functions.
-### Uncontested Performance
-- **Accurate Verification**
-  - Industry-leading accuracy in identifying legitimate users and detecting bots or suspicious accounts.
-  - Minimized false positives, ensuring a smooth onboarding experience for genuine members.
-- **Lightning-Fast Response Times**
-  - Average response time as low as **32ms**, providing nearly instantaneous verification for a seamless user experience.
-### Thorough User Checks
-- **Comprehensive Profile Analysis**
-  - Conducts deep scans of user accounts to verify authenticity, including activity logs, account creation dates, and linked profiles.
-  - Identifies potential risks like suspicious patterns or flagged behaviors.
-- **Automated Alerts for Anomalies**
-  - Automatically flags users with incomplete or inconsistent verification attempts for manual review by staff.
-  - Provides detailed logs to ensure transparency in the verification process.
-## COMMANDS
-| Command | Description | Permission |
-| :---: | :---: | :---: |
-| settings | Opens the Server Setting's Panel | `manage_guild` |
-| modlogs | Lets you set a ModLog Channel | `manage_guild` |
-| moderate | Opens the User Moderation Panel | `moderate_members` |
-| statistics | Lists Statistical Information about VaultCord | `None` |
-| usercheck | Lists Information about a User or yourself | `None` |
-| help | Shows the overall Help Message | `None` |
-| commands | Shows the List of Command's | `None` |
+### Automatic User Authentication
+_Requires the `connections` permission cloud-side._
+
+_Requires the `send_messages`, `manage_messages`, `kick_members` and `manage_roles` permission's._
+- Discreetly checks for malicious patterns in other Guild's.
+- Automatically asks User's to verify upon entering the Guild.
+- Failure to acknoledge the verification results in removal.
+- Ignores genuine Discord Bot Application's.
+- Grants a Role to User's upon successful authentication.
+
+### Customisation
+- Allows you to customise variables within the Authentication Process.
+  - The Channel that messages are sent to.
+  - The Verification Role.
+  - The Staff Team Role.
+  - The Moderation Logging Channel.
+  - The Verification Method.
+
+### Moderation
+_Requires the `kick_members`, `ban_members` and `moderate_members` permission's._
+- Provides a Moderation Panel
+- Kick & Ban User's when you need to.
+
+## COMMANDS & FUNCTIONS
+Below is a list of Command's and their necessary User & Bot Permission's.
+| Command | Description | User Permission | Bot Permission |
+| :---: | :---: | :---: | :---: |
+| premiumsettings | Opens the Premium Guild Setting's Panel | `manage_guild` | `-` |
+| settings | Opens the Guild Setting's Panel | `manage_guild` | `-` |
+| modlogs | Set a Channel to receive Mod Logging Messages | `manage_guild` | `send_messages`  |
+| moderate | Moderate Member's Efficiently | `moderate_members` | `kick_members` `ban_members` |
+| usercheck | Get information about a specific Member | `-` | `-` |
+| guildcheck | Get information about the Guild | `-` | `-` |
+| backup-guild | Create a backup of your Guild | `manage_guild` | `manage_guild` |
+| statistics | Get Statistical Information about VaultCord | `-` | `-` |
+
+Below is a list of Function's and their necessary User & Bot Permission's.
+| Function | Description | User Permission | Bot Permission |
+| :---: | :---: | :---: | :---: |
+| authentication | The Authentication functionality | `-` | `connections` `manage_roles` `send_messages` `read_message_history` |
+| customisation | The Customisation functionality | `manage_guild` | `-` |
+| moderation | The Authentication functionality | `moderate_members` | `kick_members` `ban_members` |

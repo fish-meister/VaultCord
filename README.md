@@ -1,6 +1,12 @@
 # [VAULTCORD](https://discord.com/oauth2/authorize?client_id=1326296257035112548) SECURITY 🔒
 VaultCord is dedicated to providing extra security to Discord Server's of all kinds.<br />
 Protect your Server with User Verification and more!
+
+## Index
+- [Features](https://github.com/fish-meister/VaultCord/blob/main/README.md#features)
+- [Commands & Functions](https://github.com/fish-meister/VaultCord/blob/main/README.md#commands--functions)
+- [Verification Methods](https://github.com/fish-meister/VaultCord/blob/main/Methods.md)
+
 ## FEATURES
 ### Automatic User Authentication
 _Requires the `connections` permission cloud-side._
